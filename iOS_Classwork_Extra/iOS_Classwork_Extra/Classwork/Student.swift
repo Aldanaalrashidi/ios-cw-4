@@ -16,9 +16,9 @@ import Foundation
 /// 3. gender: String
 
 struct Student {
-    name: String
-    track: String
-    gender: String
+    var name: String
+    var track: String
+    var gender: String
     
     func imageName() -> String {
         if gender == "boy" {
@@ -65,8 +65,8 @@ struct Student {
 
 var students: [Student] =
    [
-    Student(name: "ريم خالد", track: "ios", gender: "girl")
-    Student(name: "صالح شهاب", track: "Web", gender: "boy")
+    Student(name: "ريم خالد", track: "ios", gender: "girl"),
+    Student(name: "صالح شهاب", track: "Web", gender: "boy"),
     Student(name: "محمد علي", track: "Android", gender: "boy")
    ]
 
